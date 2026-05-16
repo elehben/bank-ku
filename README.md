@@ -1,8 +1,8 @@
-# 🏦 Bankku - Dashboard Keuangan Modern
+# Bankku
 
-Bankku adalah aplikasi web *dashboard* keuangan yang dibuat dengan antarmuka yang modern, bersih, dan sepenuhnya responsif. Tampilannya dirancang agar pas dan rapi saat diakses melalui perangkat Mobile (HP), Tablet, maupun Desktop.
+Bankku adalah project slicing Web Dashbord berdasarkan desain figma untuk Technical Test magang Inagata bagian Frontend. Saya menggunakan Framework React dan TailwindCSS untuk project ini 
 
-## 🛠️ Teknologi yang Digunakan
+## Tech Stack
 
 - **Framework**: [React](https://react.dev/) dengan [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -10,11 +10,50 @@ Bankku adalah aplikasi web *dashboard* keuangan yang dibuat dengan antarmuka yan
 - **Ikon**: [Lucide React](https://lucide.dev/)
 - **Routing**: [React Router v6](https://reactrouter.com/)
 
-## 🚀 Cara Menjalankan di Komputer Lokal
+## Folder Structure
 
-1. Pastikan komputer Anda sudah terinstal [Node.js](https://nodejs.org/).
-2. Buka terminal/command prompt, dan arahkan ke folder proyek ini.
-3. Jalankan perintah instalasi berikut untuk mengunduh semua *library*:
+Berikut adalah struktur direktori lengkap untuk folder `src`:
+
+```text
+src/
+├── assets/                  
+├── components/               
+│   ├── BalanceHistoryChart.jsx
+│   ├── Card.jsx
+│   ├── ExpenseStatisticsChart.jsx
+│   ├── LoansCards.jsx
+│   ├── LoansTable.jsx
+│   ├── Navbar.jsx
+│   ├── QuickTransfer.jsx
+│   ├── RecentTransactions.jsx
+│   ├── SettingEditProfile.jsx
+│   ├── SettingPreferences.jsx
+│   ├── SettingSecurity.jsx
+│   ├── Sidebar.jsx
+│   └── WeeklyActivityChart.jsx
+├── layouts/                 
+│   └── MainLayout.jsx
+├── pages/                   
+│   ├── Dashbord.jsx
+│   ├── Loans.jsx
+│   └── Setting.jsx
+├── App.css                  
+├── App.jsx                  
+├── index.css                
+└── main.jsx                 
+```
+
+## How to Run
+1. Install [Node.js](https://nodejs.org/).
+2. Clone Repository
+   ```bash
+   git clone https://github.com/elehben/bank-ku.git
+   ```
+3. Masuk project dirctory melalui terminal dengan 
+   ```bash
+   cd bank-ku
+   ```
+    install *library*:
    ```bash
    npm install
    ```
@@ -23,10 +62,3 @@ Bankku adalah aplikasi web *dashboard* keuangan yang dibuat dengan antarmuka yan
    npm run dev
    ```
 5. Buka peramban (browser) dan akses tautan yang muncul (contoh: `http://localhost:5173`).
-
-## 📁 Struktur Folder Utama
-
-- `src/components/`: Kumpulan elemen UI yang bisa dipakai berulang (Navbar, Sidebar, Card, dll).
-- `src/layouts/`: Kerangka layout rute utama (pembungkus Navbar dan menu Sidebar).
-- `src/pages/`: Halaman-halaman utama dalam aplikasi (Dashboard, Loans, Setting, dll).
-- `src/App.jsx`: File rute (routing) utama aplikasi.
