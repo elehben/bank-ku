@@ -5,7 +5,7 @@ import Loans from "./pages/Loans";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/bank-ku">
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/setting" element={<Setting />} />
