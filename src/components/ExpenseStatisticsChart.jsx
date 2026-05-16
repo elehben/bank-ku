@@ -65,7 +65,7 @@ function ExpenseStatisticsChart() {
   return (
     <div className="w-full">
         <h2 className="text-xl text-[#343C6A] font-semibold mb-4">Expense Statistics</h2>
-        <div className="bg-white rounded-3xl p-4 md:p-6 h-[275px] md:h-[300px] w-full flex items-center justify-center">
+        <div className="bg-white rounded-3xl p-4 md:p-6 h-68.75 md:h-75 w-full flex items-center justify-center">
             <PieChart
                 series={[
                     {

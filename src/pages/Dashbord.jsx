@@ -23,11 +23,11 @@ function Dashbord() {
                     </h1>
                 </div>
                 {/* Horizontal scroll enabled on mobile AND tablet (md), visible full grid on desktop (lg) */}
-                <div className="flex overflow-x-auto lg:overflow-visible gap-4 md:gap-6 lg:gap-8 pb-3 lg:pb-0 -mx-6 px-6 md:-mx-10 md:px-10 lg:mx-0 lg:px-0 scroll-smooth [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:h-0 [-ms-overflow-style:none] [scrollbar-width:none]">
-                    <div className="w-[85%] sm:w-[325px] shrink-0 lg:shrink lg:flex-1 snap-center">
+                <div className="flex overflow-x-auto lg:overflow-visible gap-4 md:gap-6 lg:gap-8 pb-3 lg:pb-0 -mx-6 px-6 md:-mx-10 md:px-10 lg:mx-0 lg:px-0 scroll-smooth [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:h-0 [-ms-overflow-style:none] scrollbar-none">
+                    <div className="w-[85%] sm:w-81.25 shrink-0 lg:shrink lg:flex-1 snap-center">
                         <Card variant="blue" />
                     </div>
-                    <div className="w-[85%] sm:w-[325px] shrink-0 lg:shrink lg:flex-1 snap-center">
+                    <div className="w-[85%] sm:w-81.25 shrink-0 lg:shrink lg:flex-1 snap-center">
                         <Card variant="white" />
                     </div>
                 </div>

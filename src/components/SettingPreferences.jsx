@@ -42,7 +42,7 @@ function Toggle({ defaultChecked }) {
     return (
         <label className="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" className="sr-only peer" defaultChecked={defaultChecked} />
-            <div className="w-[50px] h-7 bg-[#DFEAF2] peer-focus:outline-none rounded-full peer peer-checked:bg-[#16DBCC] after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-[22px]"></div>
+            <div className="w-12.5-7 bg-[#DFEAF2] peer-focus:outline-none rounded-full peer peer-checked:bg-[#16DBCC] after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-5.5"></div>
         </label>
     );
 }

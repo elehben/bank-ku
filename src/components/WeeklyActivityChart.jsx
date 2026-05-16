@@ -16,7 +16,7 @@ function WeeklyActivityChart() {
   return (
     <div className="w-full">
         <h2 className="text-xl text-[#343C6A] font-semibold mb-4">Weekly Activity</h2>
-        <div className="bg-white rounded-3xl p-3 h-[300px] w-full">
+        <div className="bg-white rounded-3xl p-3 h-75 w-full">
             <BarChart
                 dataset={dataset}
                 xAxis={[{ 

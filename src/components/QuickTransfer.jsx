@@ -28,13 +28,13 @@ function QuickTransfer() {
   return (
     <div className="w-full">
       <h2 className="text-xl text-[#343C6A] font-semibold mb-4">Quick Transfer</h2>
-      <div className="bg-white rounded-3xl p-5 md:p-6 h-[275px] md:h-[300px] w-full flex flex-col justify-center">
+      <div className="bg-white rounded-3xl p-5 md:p-6 h-68.75d:h-[300px] w-full flex flex-col justify-center">
         
         {/* Users Carousel */}
         <div className="flex items-center justify-between mb-8">
-            <div className="flex gap-2 md:gap-6 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:h-0 [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex gap-2 md:gap-6 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:h-0 [-ms-overflow-style:none] scrollbar-none">
                 {users.map((user) => (
-                    <div key={user.id} className="flex flex-col items-center flex-shrink-0">
+                    <div key={user.id} className="flex flex-col items-center shrink-0">
                         <img 
                             src={user.image} 
                             alt={user.name} 
@@ -50,7 +50,7 @@ function QuickTransfer() {
                 ))}
             </div>
             
-            <button className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-[0px_4px_15px_rgba(0,0,0,0.05)] flex justify-center items-center text-[#718EBF] flex-shrink-0 ml-2 md:ml-4 hover:bg-slate-50 transition">
+            <button className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-[0px_4px_15px_rgba(0,0,0,0.05)] flex justify-center items-center text-[#718EBF] shrink-0 ml-2 md:ml-4 hover:bg-slate-50 transition">
                 <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
             </button>
         </div>

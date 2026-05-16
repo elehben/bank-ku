@@ -53,7 +53,7 @@ function Navbar({ onMenuClick }) {
         <div className="flex justify-between items-center w-full md:w-auto gap-4 md:gap-4 lg:gap-7">
             {/* Search Bar */}
             <div className="flex items-center bg-[#F5F7FA] rounded-full px-4 lg:px-5 py-3 lg:py-3.5 gap-2 lg:gap-3 w-full md:w-48 lg:w-64 max-w-full">
-                <Search className="text-[#718EBF] w-4 h-4 lg:w-5 lg:h-5 flex-shrink-0" />
+                <Search className="text-[#718EBF] w-4 h-4 lg:w-5 lg:h-5 shrink-0" />
                 <input 
                     type="text"
                     placeholder="Search for something"
@@ -70,7 +70,7 @@ function Navbar({ onMenuClick }) {
                 {/* Notification Button */}
                 <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#F5F7FA] rounded-full flex items-center justify-center text-[#718EBF] hover:bg-slate-200 transition cursor-pointer relative">
                     <Bell className="w-5 h-5 lg:w-6 lg:h-6" />
-                    <span className="absolute top-2 right-2 lg:top-2.5 lg:right-2.5 w-[9px] h-[9px] lg:w-[11px] lg:h-[11px] bg-[#FE5C73] rounded-full border-[1.5px] lg:border-2 border-white"></span>
+                    <span className="absolute top-2 right-2 lg:top-2.5 lg:right-2.5 w-2.25 h-2.25 lg:w-2.75 lg:h-2.75 bg-[#FE5C73] rounded-full border-[1.5px] lg:border-2 border-white"></span>
                 </div>
 
                 {/* Profile Picture (Desktop) */}

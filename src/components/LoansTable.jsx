@@ -37,7 +37,7 @@ function LoansTable() {
                                 <td className="py-4 px-4 hidden md:table-cell">{loan.interest}</td>
                                 <td className="py-4 px-4 hidden md:table-cell">{loan.installment}</td>
                                 <td className="py-4 px-0 md:px-4 text-right md:text-left">
-                                    <button className={`px-4 md:px-8 py-2 md:py-2.5 rounded-full border border-2 text-[12px] md:text-[15px] font-medium transition whitespace-nowrap ${loan.active ? "border-[#396AFF] text-[#396AFF] hover:bg-blue-50" : "border-[#232323] text-[#232323] hover:bg-gray-50"}`}>
+                                    <button className={`px-4 md:px-8 py-2 md:py-2.5 rounded-full border text-[12px] md:text-[15px] font-medium transition whitespace-nowrap ${loan.active ? "border-[#396AFF] text-[#396AFF] hover:bg-blue-50" : "border-[#232323] text-[#232323] hover:bg-gray-50"}`}>
                                         Repay
                                     </button>
                                 </td>

@@ -33,7 +33,7 @@ const transactions = [
 
 function RecentTransactions() {
   return (
-    <div className="w-full h-[235px] mb-8">
+    <div className="w-full h-58.75 mb-8">
         <h2 className="text-xl text-[#343C6A] font-semibold mb-4">
             Recent Transaction
         </h2>

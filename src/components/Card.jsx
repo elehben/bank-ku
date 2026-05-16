@@ -10,7 +10,7 @@ function Card({
   const isBlue = variant === "blue";
 
   return (
-    <div className={`w-full h-[235px] rounded-3xl overflow-hidden flex flex-col justify-between font-sans transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer ${isBlue ? "bg-linear-to-br from-[#4C49ED] to-[#0A06F4] text-white" : "bg-white text-[#343C6A] border border-[#DFEAF2]"}`}>
+    <div className={`w-full h-58.75 rounded-3xl overflow-hidden flex flex-col justify-between font-sans transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer ${isBlue ? "bg-linear-to-br from-[#4C49ED] to-[#0A06F4] text-white" : "bg-white text-[#343C6A] border border-[#DFEAF2]"}`}>
         
         {/* Top Section */}
         <div className="p-5 xl:p-6 flex justify-between items-start">
@@ -31,7 +31,7 @@ function Card({
         <div className="px-5 xl:px-6 flex gap-10 md:gap-16 lg:gap-8 xl:gap-14">
             <div>
                 <p className={`text-[10px] md:text-xs font-base ${isBlue ? "text-white/70" : "text-[#718EBF]"}`}>CARD HOLDER</p>
-                <p className={`text-xs md:text-sm lg:text-xs xl:text-sm font-semibold truncate max-w-[100px] md:max-w-none lg:max-w-[90px] xl:max-w-none ${isBlue ? "text-white" : "text-[#343C6A]"}`}>{cardHolder}</p>
+                <p className={`text-xs md:text-sm lg:text-xs xl:text-sm font-semibold truncate max-w-25 md:max-w-none lg:max-w-22.5 xl:max-w-none ${isBlue ? "text-white" : "text-[#343C6A]"}`}>{cardHolder}</p>
             </div>
             <div>
                 <p className={`text-[10px] md:text-xs font-base ${isBlue ? "text-white/70" : "text-[#718EBF]"}`}>VALID THRU</p>

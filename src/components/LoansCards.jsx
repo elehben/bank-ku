@@ -33,10 +33,10 @@ const loanCards = [
 
 function LoansCards() {
     return (
-        <div className="flex overflow-x-auto md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 mb-5 pb-4 -mx-5 px-5 md:mx-0 md:px-0 scroll-smooth [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:h-0 [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="flex overflow-x-auto md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 mb-5 pb-4 -mx-5 px-5 md:mx-0 md:px-0 scroll-smooth [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:h-0 [-ms-overflow-style:none] scrollbar-none">
             {loanCards.map((card) => (
                 <div key={card.id} className="bg-white rounded-3xl p-4 lg:p-5 flex items-center gap-3 lg:gap-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer w-[75%] shrink-0 md:w-auto md:shrink snap-center">
-                    <div className={`w-14 h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center flex-shrink-0 ${card.bgColor}`}>
+                    <div className={`w-14 h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center shrink-0 ${card.bgColor}`}>
                         {card.icon}
                     </div>
                     <div className="min-w-0">

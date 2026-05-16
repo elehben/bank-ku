@@ -8,7 +8,7 @@ function BalanceHistoryChart() {
   return (
     <div className="w-full">
         <h2 className="text-xl text-[#343C6A] font-semibold mb-4">Balance History</h2>
-        <div className="bg-white rounded-3xl pt-6 h-[300px] w-full">
+        <div className="bg-white rounded-3xl pt-6 h-75 w-full">
             <LineChart
                 xAxis={[{ 
                     scaleType: 'point', 
